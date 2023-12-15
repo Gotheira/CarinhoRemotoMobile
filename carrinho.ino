@@ -96,11 +96,19 @@ if(data == "D"){
 if(data=="L"){
   analogWrite(pinM2B, 200);
   analogWrite(pinM2A, 0);
+  digitalWrite(pinLed, HIGH);
+  delay(500);  // Tempo em milissegundos que o LED fica aceso
+  digitalWrite(pinLed, LOW);
+  delay(500);  // Tempo em milissegundos que o LED fica apagado
 }
 
 if(data=="R"){
   analogWrite(pinM2A, 200);
-  analogWrite(pinM2B, 0); 
+  analogWrite(pinM2B, 0);
+  digitalWrite(pinLed2, HIGH);
+  delay(500);  // Tempo em milissegundos que o LED fica aceso
+  digitalWrite(pinLed2, LOW);
+  delay(500); 
 }
 
 if(data=="P"){
